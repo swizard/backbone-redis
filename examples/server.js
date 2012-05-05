@@ -2,7 +2,6 @@
 // backbone-redis server to server demonstration
 // ---------------------------------------------
 
-require.paths.unshift('../../lib');
 
 // Project dependencies
 var express    = require('express'),
@@ -10,7 +9,7 @@ var express    = require('express'),
     browserify = require('browserify'),
     Backbone   = require('backbone'),
     _          = require('underscore'),
-    bbRedis    = require('../'),
+    bbRedis    = require('../../backbone-redis'),
     io         = require('socket.io'),
     server     = module.exports = express.createServer(),
     io         = io.listen(server);
